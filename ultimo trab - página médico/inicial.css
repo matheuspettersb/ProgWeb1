@@ -1,0 +1,59 @@
+body{
+    margin:0px;
+}
+
+nav {
+    margin-top:0;
+    background-color:cornflowerblue;
+	overflow: hidden;
+    position: absolute;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+nav img{
+    width: 70px;
+}   
+
+nav a{
+    padding: 15px;
+    font-size: large;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.textomenu:hover{
+    background-color: aliceblue;
+    color: black; /* cor do texto*/
+}
+
+#segunda_parte_menu {
+    position: relative;
+    float: right;
+    width:30%;
+    background-color: cornflowerblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+section h1{
+    text-align: center;
+}
+
+section p{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p{
+    text-align:left;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="consultas.css">
+    <title>Minhas Consultas</title>
+</head>
+
+<body>
+    <nav>
+        <a href="PaginaInicial.html"><img src="https://seeklogo.com/images/P/prefeitura-de-blumenau-logo-920AF0DE38-seeklogo.com.png"
+                title="logo"></img></a>
+        <a class="textomenu" href="PaginaInicial.html">Home</a>
+        <a class="textomenu" href="MarcarConsultas.html">Consultas</a>
+    </nav>
+
+    <div id="segunda_parte_menu">
+        <a href="PaginaLogin.html">Login/Logoff</a>
+        <p>Nome do Usuário</p>
+    </div>
+
+    <br /><br />
+    <div class="marcarconsulta">
+        <form id="marcar">
+            <h1>Marcar Consulta</h1>
+            <label for="fespecialidade">Especialidade:</label><br />
+            <select name="fespecialidade" id="fespecialidade">
+                <option>Neurologia</option>
+                <option>Cardiologia</option>
+                <option>Ortopedia</option>
+                <option>Otorrino</option>
+                <option>Oftalmologia</option>
+            </select><br /><br />
+            <label for="fmedico">Selecione o(a) médico(a):</label><br />
+            <select name="fmedico" id="fmedico">
+                <option>Adriana</option>
+                <option>Marcelo</option>
+                <option>Sérgio</option>
+                <option>Tamara</option>
+            </select><br /><br />
+            <label for="fdata">Data preferida:</label>
+            <input type="date" name="fdata" id="fdata">
+            <label for="fperiodo">Período desejado:</label>
+            <select name="fperiodo" id="fperiodo">
+                <option>Matutino</option>
+                <option>Vespertino</option>
+            </select>
+            <p>Preferencialmente entrar em contato por:</p>
+            <label for="Email">E-mail</label>
+            <input type="checkbox" id="Email" name="Email">
+            <label for="Whatsapp">Whatsapp</label>
+            <input type="checkbox" id="Whatsapp" name="Whatsapp">
+            <label for="Telefone">Telefone</label>
+            <input type="checkbox" id="Telefone" name="Telefone">
+            <p>Descreva seus sintoma:</p>
+            <textarea form="marcar" rows="4" cols="50"></textarea>
+            <br>
+            <button type="button" onclick="preencher()">Marcar Consulta</button>
+        </form>
+    </div>
+
+    <div class="minhasconsultas">
+        <h1>Minhas Consultas</h1>
+        <br />
+        <input type="text" id="barra_procura" onkeyup="procura()" placeholder="Procure nome do medico">
+        <table id="tabela" type="hidden">
+            <thead>
+                <tr>
+                    <th onclick="ordena(0)">Nome do Médico</th>
+                    <th onclick="ordena(1)">Especialidade</th>
+                    <th onclick="ordena(2)">Data</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <br /> <br />
+
+    <footer>
+        <p>Projeto desenvolvido por: Gabriel Lopes, Matheus Bevilaqua e Lucas Wagner.</p>
+    </footer>
+
+</body>
+
+<script src="Consultas.js"></script>
+
+</html>

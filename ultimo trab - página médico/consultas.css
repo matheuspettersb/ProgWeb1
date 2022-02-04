@@ -1,0 +1,98 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+    cursor: pointer;
+}
+
+td {
+    text-align: left;
+}
+
+body{
+    margin:0px;
+}
+
+nav {
+    margin-top:0;
+    background-color:cornflowerblue;
+	overflow: hidden;
+    position: absolute;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+nav img{
+    width: 70px;
+}   
+
+nav a{
+    padding: 15px;
+    font-size: large;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.textomenu:hover{
+    background-color: aliceblue;
+    color: black; /* cor do texto*/
+}
+
+#segunda_parte_menu {
+    position: relative;
+    float: right;
+    width:30%;
+    background-color: cornflowerblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.marcarconsulta {
+    position: relative;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-top:100px;
+    margin-bottom: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.marcarconsulta form{
+    position: relative;
+    margin-right: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.minhasconsultas {
+    position: relative;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.minhasconsultas h1{
+    margin-left: 50px;
+}
+
+.minhasconsultas input{
+    margin-right: 30px;
+    margin-left: 50px;
+}
+.minhasconsultas table{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}

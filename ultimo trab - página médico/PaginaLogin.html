@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Consultas Blumenau</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="PaginaInicial.html"><img src="https://seeklogo.com/images/P/prefeitura-de-blumenau-logo-920AF0DE38-seeklogo.com.png"
+                title="logo"></img></a>
+        <a class="textomenu" href="PaginaInicial.html">Home</a>
+        <a class="textomenu" href="MarcarConsultas.html">Consultas</a>
+    </nav>
+
+    <div id="segunda_parte_menu">
+        <a href="PaginaLogin.html">Login/Logoff</a>
+        <p>Nome do Usuário</p>
+    </div>
+
+    <h1>Faça login para usar os recursos do site ou cadastre-se.</h1>
+
+    <main>
+        <div id="Entrar">
+            <h2>Entrar</h2>
+            <p>E-mail</p>
+            <input type="email">
+            <p>Senha</p>
+            <input type="password">
+            <p></p><a href="#">Esqueci minha senha</a></p>
+            <input type="checkbox" id="Lembrar-me" name="Lembrar-me">
+            <label for="Lembrar-me">Lembrar-me</label><br>
+            <button type="button">Entrar</button>
+        </div>
+
+        <div id="Cadastrar">
+            <form>
+            <h2>Cadastrar-se</h2>
+            <label for="email">Endereço de Email</label><br/>
+            <input type="email" name="email" placeholder="email@email.com" id="email"><br/>
+            <label for="NomeComp">Nome Completo</label><br/>
+            <input type="text" name="NomeComp" placeholder="Seu Nome"  id="nome"><br/>
+            <label for="Telefone">Telefone</label><br/>
+            <input type="text" name="Telefone" placeholder="X XXXX-XXXX"  id="telefone"><br/>
+            <label for=" Geral(RG)">Registro Geral</label><br/>
+            <input type="text" name="Geral(RG)" placeholder="X.XXX.XXX"  id="rg"><br/>
+            <label for="Idade">Idade</label><br/>
+            <input type="text" name="Idade"  id="idade"><br/>
+            <label for="Endereço">Endereço</label><br/>
+            <input type="text" name="Endereço"  id="endereço"><br/>
+            <label for="senha">Senha</label><br/>
+            <input type="password" name="senha"  id="senha"><br/>
+            <label for="Confirme sua Senha">Confirme sua Senha</label><br/>
+            <input type="password" name="Confirme sua Senha"><br/>
+            <input type="checkbox" id="Receber Email" name="Receber Email">
+            <label for="Receber Email">Desejo receber notificações por e-mail</label><br>
+            <button type="button" onclick="cadastro()">Cadastrar</button>
+             </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>Projeto desenvolvido por: Gabriel Lopes, Matheus Bevilaqua e Lucas Wagner</p>
+    </footer>
+    <script src="Principal.js"></script>
+</body>
+
+</html>

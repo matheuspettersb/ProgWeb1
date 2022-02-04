@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<title>Exercicio REST Client</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- adicionando o JQuery-->
+</head>
+
+<body>
+	<form id="">
+		<label for="cep">Digite o Cep:</label> <input type="text" name="cep"
+			placeholder="Ex: 00000000" id="fcep"> <input type="button"
+			value="OK" onclick="achacep()">
+	</form>
+	<br />
+	<p>Informacoes do CEP pesquisado:</p>
+	<br />
+	<!-- espacamento pra ficar minimamente mais decente ja que nao tem css-->
+	<p class="cep-cep">O CEP: </p>
+	<p class="cep-logradouro">Logradouro: </p>
+	<p class="cep-complemento">Complemento: </p>
+	<p class="cep-bairro">Bairro: </p>
+	<p class="cep-localidade">Localidade: </p>
+	<p class="cep-uf">UF: </p>
+	<p class="cep-ibge">IBGE: </p>
+	<p class="cep-gia">GIA: </p>
+	<p class="cep-ddd">DDD: </p>
+	<p class="cep-siafi">SIAFI: </p>
+</body>
+<script src="RestClient.js"></script>
+
+</html>
